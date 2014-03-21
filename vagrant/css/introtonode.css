@@ -184,6 +184,7 @@ body     { pointer-events: none; }
     font-size:70px;
     margin-bottom:30px;
 }
+
 .cube ul li:before {
     content: "⟩ \0020"
 }
