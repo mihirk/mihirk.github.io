@@ -66,11 +66,11 @@ body {
 
     min-height: 740px;
     background-color: black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(34, 141, 205)), to(#228DCD));
-    background: -webkit-radial-gradient(rgb(34, 141, 205), #228DCD);
-    background: -moz-radial-gradient(rgb(34, 141, 205), #228DCD);
-    background: -o-radial-gradient(rgb(34, 141, 205), #228DCD);
-    background: radial-gradient(rgb(34, 141, 205), #228DCD);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(72, 180, 251)), to(#48B4FB));
+    background: -webkit-radial-gradient(rgb(72, 180, 251), #48B4FB);
+    background: -moz-radial-gradient(rgb(72, 180, 251), #48B4FB);
+    background: -o-radial-gradient(rgb(72, 180, 251), #48B4FB);
+    background: radial-gradient(rgb(72, 180, 251), #48B4FB);
 
     -webkit-font-smoothing: antialiased;
 }
