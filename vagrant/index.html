@@ -2,25 +2,27 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=1024"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <title>Vagrant Virtual Machines and Ansible | RootConf Runup Pune | by Mihir</title>
-    
-    <meta name="description" content="Introduction to Vagrant Virtual Machines and Ansible" />
-    <meta name="author" content="Mihir" />
+
+    <meta name="description" content="Introduction to Vagrant Virtual Machines and Ansible"/>
+    <meta name="author" content="Mihir"/>
 
     <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
-    <link href="css/introtonode.css" rel="stylesheet" />
-    
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link href="css/introtovagrant.css" rel="stylesheet"/>
+
+    <link rel="shortcut icon" href="img/favicon.png"/>
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
 </head>
 
 <body class="impress-not-supported">
 
 <div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified
+        version of this presentation.</p>
+
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 
@@ -28,86 +30,110 @@
 
     <div id="title" class="step" data-x="-500" data-y="50">
         <h1>Vagrant VMs & Provisioning</h1>
+
         <h2>Mihir</h2>
-        <h3><a href='https://github.com/mihirk'><img src='github.png'/></a><h3>
+
+        <h3><a href='https://github.com/mihirk'><img src='img/github.png'/></a></h3>
     </div>
 
     <div id="agenda" class="step" data-x="500" data-y="50">
         <h1><strong>Agenda:</strong></h1>
+
         <h3>Problems</h3>
+
         <h3>Virtualization</h3>
+
         <h3>What is Vagrant</h3>
+
         <h3>Why Vagrant</h3>
+
         <h3>How Vagrant and Ansible</h3>
     </div>
 
     <div class="cube">
-        
-        <div class="topFace step" data-x="0" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0" data-rotate-z="45" data-scale="0.5">
+
+        <div class="topFace step" data-x="0" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0"
+             data-rotate-z="45" data-scale="0.5">
             <h1 style="border: 0;">Common problems faced with team expansions and project ramp ups</h1>
-            
+
         </div>
 
-        <div class="leftFace step" data-x="-125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45" data-rotate-z="0" data-scale="0.5">
-        <h3><strong>Development Environment Setup</strong></h3>
-        <img width=600px src='comic.png'/>
-        <p>How easy is it to setup your project's development environment?</p>
+        <div class="leftFace step" data-x="-125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
+             data-rotate-z="0" data-scale="0.5">
+            <h3><strong>Development Environment Setup</strong></h3>
+            <img width=600px src='img/comic.png'/>
+
+            <p>How easy is it to setup your project's development environment?</p>
         </div>
 
-        <div class="rightFace step" data-x="125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45" data-rotate-z="0" data-scale="0.5">
+        <div class="rightFace step" data-x="125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45"
+             data-rotate-z="0" data-scale="0.5">
             <h1><strong>Development Environment Setup</strong></h1>
-                
-                <h3>Initial dip in team productivity</h3>
-                
-        
+
+            <h3>Initial dip in team productivity</h3>
+
+
         </div>
 
-        <div class="backRightFace step" data-x="125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
+        <div class="backRightFace step" data-x="125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="135"
+             data-rotate-z="0" data-scale="0.5">
             <h1>Development Environment Setup</h1>
+
             <h3>Different operating systems and hardware</h3>
         </div>
 
 
+        <div class="backLeftFace step" data-x="-125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225"
+             data-rotate-z="0" data-scale="0.5">
+            <h1>Development Environment Setup</h1>
 
-        <div class="backLeftFace step" data-x="-125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225" data-rotate-z="0" data-scale="0.5">
-              <h1>Development Environment Setup</h1>
             <h3>Inconsistencies between procedures</h3>
         </div>
 
-        <div class="bottomFace step" data-x="0" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180" data-rotate-z="45" data-scale="0.5">
+        <div class="bottomFace step" data-x="0" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
+             data-rotate-z="45" data-scale="0.5">
             <h1>Inconsistent Environments</h1>
+
             <p>The delta between development environment and the other environments used in the project.</p>
         </div>
 
-        </div>
+    </div>
 
     <div class="cube">
-        <div class="topFace step" data-x="1000" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0" data-rotate-z="45" data-scale="0.5">
-             <h1>Dependency Conflicts</h1>
-                <p>Multiple codebases on same machine can cause dependency clashes or misdirection.</p>
+        <div class="topFace step" data-x="1000" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0"
+             data-rotate-z="45" data-scale="0.5">
+            <h1>Dependency Conflicts</h1>
+
+            <p>Multiple codebases on same machine can cause dependency clashes or misdirection.</p>
         </div>
-        <div class="leftFace step" data-x="875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45" data-rotate-z="0" data-scale="0.5">
-             <h1>Virtualization and VirtualBox</h1>
-                <ul>
-                    <li>Full Virtualization</li>
-                    <li>Partial Virtualization</li>
-                    <li>Paravirtualization</li>
-                </ul>
+        <div class="leftFace step" data-x="875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
+             data-rotate-z="0" data-scale="0.5">
+            <h1>Virtualization and VirtualBox</h1>
+            <ul>
+                <li>Full Virtualization</li>
+                <li>Partial Virtualization</li>
+                <li>Paravirtualization</li>
+            </ul>
         </div>
-        <div class="rightFace step" data-x="1125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45" data-rotate-z="0" data-scale="0.5">
-                <h1>Virtual Box</h1>
-                <p>Virtual Box implements full Virtualization.</p>
+        <div class="rightFace step" data-x="1125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45"
+             data-rotate-z="0" data-scale="0.5">
+            <h1>Virtual Box</h1>
+
+            <p>Virtual Box implements full Virtualization.</p>
         </div>
 
-        <div class="backRightFace step" data-x="1125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
-                <h1>None</h1>
-                
+        <div class="backRightFace step" data-x="1125" data-y="-35" data-z="-1200" data-rotate-x="-30"
+             data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
+            <h1>None</h1>
+
         </div>
-        <div class="backLeftFace step" data-x="875" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225" data-rotate-z="0" data-scale="0.5">
-                <h1>None</h1>
+        <div class="backLeftFace step" data-x="875" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225"
+             data-rotate-z="0" data-scale="0.5">
+            <h1>None</h1>
         </div>
-        <div class="bottomFace step" data-x="1000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180" data-rotate-z="45" data-scale="0.5">
-                <h1>None</h1>
+        <div class="bottomFace step" data-x="1000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
+             data-rotate-z="45" data-scale="0.5">
+            <h1>None</h1>
         </div>
     </div>
 
