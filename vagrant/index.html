@@ -140,47 +140,58 @@
 
         <div class="bottomFace step" data-x="1000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
              data-rotate-z="45" data-scale="0.5">
-            <h1>Vagrantfile</h1>
+            <h1>Vagrant Machine</h1>
+            <p>
+                <ul>
+                    <li>vagrant box add {{ box-name }} {{ box-url }}</li>
+                    <li>vagrant init {{ box-name }}</li>
+                    <li>vagrant up</li>
+                </ul>
+            </p>
 
-            <p>Vagrant managed VM's configuration and provisioning can be managed through the Vagrantfile.</p>
         </div>
     </div>
 
     <div class="cube">
         <div class="topFace step" data-x="2000" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0"
              data-rotate-z="45" data-scale="0.5">
+            <h1>Vagrantfile</h1>
+
+            <p>Vagrant managed VM's configuration and provisioning can be managed through the Vagrantfile.</p>
+        </div>
+        <div class="leftFace step" data-x="1875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
+             data-rotate-z="0" data-scale="0.5">
             <h1>Vagrant Provisioners</h1>
 
             <p>Vagrant allows you to plugin provisioners like Chef, Puppet etc.</p>
         </div>
-        <div class="leftFace step" data-x="1875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
-             data-rotate-z="0" data-scale="0.5">
-            <h1>Virtualization and VirtualBox</h1>
-            <ul>
-                <li>Full Virtualization</li>
-                <li>Partial Virtualization</li>
-                <li>Paravirtualization</li>
-            </ul>
-        </div>
         <div class="rightFace step" data-x="2125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45"
              data-rotate-z="0" data-scale="0.5">
-            <h1>Virtual Box</h1>
-
-            <p>Virtual Box implements full Virtualization.</p>
+            <h1>Ansible</h1>
+            <p>Ansible is another orchestration tool. It requires no client side agent installation.</p>
         </div>
 
         <div class="backRightFace step" data-x="2125" data-y="-35" data-z="-1200" data-rotate-x="-30"
              data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
-            <h1>None</h1>
+            <h1>Vagrant and Ansible</h1>
+            <p>Vagrant provides a module for Ansible</p>
 
         </div>
         <div class="backLeftFace step" data-x="1875" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225"
              data-rotate-z="0" data-scale="0.5">
-            <h1>None</h1>
+            <h1>Advantages of Vagrant</h1>
+            <p>
+                <ul>
+                    <li>Isolation</li>
+                    <li>Configuration Management</li>
+                    <li>Ease of distribution</li>
+                </ul>
+            </p>
         </div>
         <div class="bottomFace step" data-x="2000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
              data-rotate-z="45" data-scale="0.5">
-            <h1>None</h1>
+            <h1>Idea Scenario</h1>
+            <p>Same Vagrant Boxes across the team, automated vagrant box provisioning and vagrant box version control.</p>
         </div>
     </div>
 
