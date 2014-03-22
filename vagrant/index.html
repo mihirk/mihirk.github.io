@@ -28,173 +28,215 @@
 
 <div id="impress">
 
-    <div id="title" class="step" data-x="-500" data-y="50">
-        <h1>Vagrant VMs & Provisioning</h1>
+<div id="title" class="step" data-x="-500" data-y="50">
+    <h1>Vagrant VMs & Provisioning</h1>
 
-        <h2>Mihir</h2>
+    <h2>Mihir</h2>
 
-        <h3><a href='https://github.com/mihirk'><img src='img/github.png'/></a></h3>
-    </div>
+    <h3><a href='https://github.com/mihirk'><img src='img/github.png'/></a></h3>
+</div>
 
-    <div id="agenda" class="step" data-x="500" data-y="50">
-        <h1><strong>Agenda:</strong></h1>
+<div id="agenda" class="step" data-x="500" data-y="50">
+    <h1><strong>Agenda:</strong></h1>
 
-        <h3>Problems</h3>
+    <h3>Problems</h3>
 
-        <h3>Virtualization</h3>
+    <h3>Virtualization</h3>
 
-        <h3>What is Vagrant</h3>
+    <h3>What is Vagrant</h3>
 
-        <h3>How Vagrant and Ansible</h3>
+    <h3>How Vagrant and Ansible</h3>
 
-        <h3>Vagrant Advantages</h3>
-    </div>
+    <h3>Vagrant Advantages</h3>
+</div>
 
-    <div class="cube">
+<div class="cube">
 
-        <div class="topFace step" data-x="0" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0"
-             data-rotate-z="45" data-scale="0.5">
-            <h1 style="border: 0;">Common problems faced with team expansions and project ramp ups</h1>
-
-        </div>
-
-        <div class="leftFace step" data-x="-125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
-             data-rotate-z="0" data-scale="0.5">
-            <h3><strong>Development Environment Setup</strong></h3>
-            <img width=600px src='img/comic.png'/>
-
-            <p>How easy is it to setup your project's development environment?</p>
-        </div>
-
-        <div class="rightFace step" data-x="125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45"
-             data-rotate-z="0" data-scale="0.5">
-            <h1><strong>Development Environment Setup</strong></h1>
-
-            <h3>Initial dip in team productivity</h3>
-
-
-        </div>
-
-        <div class="backRightFace step" data-x="125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="135"
-             data-rotate-z="0" data-scale="0.5">
-            <h1>Development Environment Setup</h1>
-
-            <h3>Different operating systems and hardware</h3>
-        </div>
-
-
-        <div class="backLeftFace step" data-x="-125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225"
-             data-rotate-z="0" data-scale="0.5">
-            <h1>Development Environment Setup</h1>
-
-            <h3>Inconsistencies between procedures</h3>
-        </div>
-
-        <div class="bottomFace step" data-x="0" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
-             data-rotate-z="45" data-scale="0.5">
-            <h1>Inconsistent Environments</h1>
-
-            <p>The delta between development environment and the other environments used in the project.</p>
-        </div>
+    <div class="topFace step" data-x="0" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0"
+         data-rotate-z="45" data-scale="0.5">
+        <h1 style="border: 0;">Common problems faced with team expansions and project ramp ups</h1>
 
     </div>
 
-    <div class="cube">
-        <div class="topFace step" data-x="1000" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0"
-             data-rotate-z="45" data-scale="0.5">
-            <h1>Dependency Conflicts</h1>
+    <div class="leftFace step" data-x="-125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
+         data-rotate-z="0" data-scale="0.5">
+        <h3><strong>Development Environment Setup</strong></h3>
+        <img width=600px src='img/comic.png'/>
 
-            <p>Multiple codebases on same machine can cause dependency clashes or misdirection.</p>
-        </div>
-        <div class="leftFace step" data-x="875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
-             data-rotate-z="0" data-scale="0.5">
-            <h1>Virtualization and VirtualBox</h1>
-            <ul>
-                <li>Full Virtualization</li>
-                <li>Partial Virtualization</li>
-                <li>Paravirtualization</li>
-            </ul>
-        </div>
-        <div class="rightFace step" data-x="1125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45"
-             data-rotate-z="0" data-scale="0.5">
-            <h1>Virtual Box</h1>
-
-            <p>Virtual Box implements full Virtualization.</p>
-        </div>
-
-        <div class="backRightFace step" data-x="1125" data-y="-35" data-z="-1200" data-rotate-x="-30"
-             data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
-            <h1>Vagrant</h1>
-
-            <p>Vagrant is a wrapper over full virtualization implementing software, like VirtualBox.</p>
-
-        </div>
-
-
-        <div class="backLeftFace step" data-x="875" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225"
-             data-rotate-z="0" data-scale="0.5">
-            <h1>Vagrant Boxes</h1>
-
-            <p>Vagrant uses the .box format to package its Virtual Machines</p>
-        </div>
-
-        <div class="bottomFace step" data-x="1000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
-             data-rotate-z="45" data-scale="0.5">
-            <h1>Vagrant Machine</h1>
-            <p>
-                <ul>
-                    <li>vagrant box add {{ box-name }} {{ box-url }}</li>
-                    <li>vagrant init {{ box-name }}</li>
-                    <li>vagrant up</li>
-                </ul>
-            </p>
-
-        </div>
+        <p>How easy is it to setup your project's development environment?</p>
     </div>
 
-    <div class="cube">
-        <div class="topFace step" data-x="2000" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0"
-             data-rotate-z="45" data-scale="0.5">
-            <h1>Vagrantfile</h1>
+    <div class="rightFace step" data-x="125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45"
+         data-rotate-z="0" data-scale="0.5">
+        <h1><strong>Development Environment Setup</strong></h1>
 
-            <p>Vagrant managed VM's configuration and provisioning can be managed through the Vagrantfile.</p>
-        </div>
-        <div class="leftFace step" data-x="1875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
-             data-rotate-z="0" data-scale="0.5">
-            <h1>Vagrant Provisioners</h1>
+        <h3>Initial dip in team productivity</h3>
 
-            <p>Vagrant allows you to plugin provisioners like Chef, Puppet etc.</p>
-        </div>
-        <div class="rightFace step" data-x="2125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45"
-             data-rotate-z="0" data-scale="0.5">
-            <h1>Ansible</h1>
-            <p>Ansible is another orchestration tool. It requires no client side agent installation.</p>
-        </div>
 
-        <div class="backRightFace step" data-x="2125" data-y="-35" data-z="-1200" data-rotate-x="-30"
-             data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
-            <h1>Vagrant and Ansible</h1>
-            <p>Vagrant provides a module for Ansible</p>
-
-        </div>
-        <div class="backLeftFace step" data-x="1875" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225"
-             data-rotate-z="0" data-scale="0.5">
-            <h1>Advantages of Vagrant</h1>
-            <p>
-                <ul>
-                    <li>Isolation</li>
-                    <li>Configuration Management</li>
-                    <li>Ease of distribution</li>
-                </ul>
-            </p>
-        </div>
-        <div class="bottomFace step" data-x="2000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
-             data-rotate-z="45" data-scale="0.5">
-            <h1>Idea Scenario</h1>
-            <p>Same Vagrant Boxes across the team, automated vagrant box provisioning and vagrant box version control.</p>
-        </div>
     </div>
 
+    <div class="backRightFace step" data-x="125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="135"
+         data-rotate-z="0" data-scale="0.5">
+        <h1>Development Environment Setup</h1>
+
+        <h3>Different operating systems and hardware</h3>
+    </div>
+
+
+    <div class="backLeftFace step" data-x="-125" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225"
+         data-rotate-z="0" data-scale="0.5">
+        <h1>Development Environment Setup</h1>
+
+        <h3>Inconsistencies between procedures</h3>
+    </div>
+
+    <div class="bottomFace step" data-x="0" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
+         data-rotate-z="45" data-scale="0.5">
+        <h1>Inconsistent Environments</h1>
+
+        <p>The delta between development environment and the other environments used in the project.</p>
+    </div>
+
+</div>
+
+<div class="cube">
+    <div class="topFace step" data-x="1000" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0"
+         data-rotate-z="45" data-scale="0.5">
+        <h1>Dependency Conflicts</h1>
+
+        <p>Multiple codebases on same machine can cause dependency clashes or misdirection.</p>
+    </div>
+    <div class="leftFace step" data-x="875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
+         data-rotate-z="0" data-scale="0.5">
+        <h1>Virtualization and VirtualBox</h1>
+        <ul>
+            <li>Full Virtualization</li>
+            <li>Partial Virtualization</li>
+            <li>Paravirtualization</li>
+        </ul>
+    </div>
+    <div class="rightFace step" data-x="1125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45"
+         data-rotate-z="0" data-scale="0.5">
+        <h1>Virtual Box</h1>
+
+        <p>Virtual Box implements full Virtualization.</p>
+    </div>
+
+    <div class="backRightFace step" data-x="1125" data-y="-35" data-z="-1200" data-rotate-x="-30"
+         data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
+        <h1>Vagrant</h1>
+
+        <p>Vagrant is a wrapper over full virtualization implementing software, like VirtualBox.</p>
+
+    </div>
+
+
+    <div class="backLeftFace step" data-x="875" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225"
+         data-rotate-z="0" data-scale="0.5">
+        <h1>Vagrant Boxes</h1>
+
+        <p>Vagrant uses the .box format to package its Virtual Machines</p>
+    </div>
+
+    <div class="bottomFace step" data-x="1000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
+         data-rotate-z="45" data-scale="0.5">
+        <h1>Vagrant Machine</h1>
+
+
+        <ul>
+            <li>vagrant box add {{ box-name }} {{ box-url }}</li>
+            <li>vagrant init {{ box-name }}</li>
+            <li>vagrant up</li>
+        </ul>
+
+
+    </div>
+</div>
+
+<div class="cube">
+    <div class="topFace step" data-x="2000" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0"
+         data-rotate-z="45" data-scale="0.5">
+        <h1>Vagrantfile</h1>
+
+        <p>Vagrant managed VM's configuration and provisioning can be managed through the Vagrantfile.</p>
+    </div>
+    <div class="leftFace step" data-x="1875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
+         data-rotate-z="0" data-scale="0.5">
+        <h1>Vagrant Provisioners</h1>
+
+        <p>Vagrant allows you to plugin provisioners like Chef, Puppet etc.</p>
+    </div>
+    <div class="rightFace step" data-x="2125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45"
+         data-rotate-z="0" data-scale="0.5">
+        <h1>Ansible</h1>
+
+        <p>Ansible is another orchestration tool. It requires no client side agent installation.</p>
+    </div>
+
+    <div class="backRightFace step" data-x="2125" data-y="-35" data-z="-1200" data-rotate-x="-30"
+         data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
+        <h1>Vagrant and Ansible</h1>
+
+        <p>Vagrant provides a module for Ansible</p>
+
+    </div>
+    <div class="backLeftFace step" data-x="1875" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225"
+         data-rotate-z="0" data-scale="0.5">
+        <h1>Advantages of Vagrant</h1>
+
+
+        <ul>
+            <li>Configuration Management</li>
+            <li>Ease of distribution</li>
+            <li>Ease of use</li>
+        </ul>
+
+    </div>
+    <div class="bottomFace step" data-x="2000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
+         data-rotate-z="45" data-scale="0.5">
+        <h1>Ideal Scenario</h1>
+
+        <p>Same Vagrant Boxes across the team, automated vagrant box provisioning and vagrant box version control.</p>
+    </div>
+</div>
+<div class="cube">
+    <div class="topFace step" data-x="3000" data-y="-125" data-z="-1005" data-rotate-x="60" data-rotate-y="0"
+         data-rotate-z="45" data-scale="0.5">
+        <h1>Resources</h1>
+        <ul>
+            <li><a href="http://www.vagrantup.com/">Vagrantup</a></li>
+            <li><a href="http://www.vagrantup.com/">Vagrantbox</a></li>
+            <li><a href="http://www.ansible.com/home">Ansible</a></li>
+        </ul>
+    </div>
+    <div class="leftFace step" data-x="2875" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="-45"
+         data-rotate-z="0" data-scale="0.5">
+        <h1>Credits</h1>
+        <ul>
+            <li>ID</li>
+            <li>AP</li>
+        </ul>
+    </div>
+    <div class="rightFace step" data-x="3125" data-y="90" data-z="-985" data-rotate-x="-30" data-rotate-y="45"
+         data-rotate-z="0" data-scale="0.5">
+        <h1>Thank You</h1>
+        <img height="500px" src="img/goat.jpg"/>
+    </div>
+
+    <div class="backRightFace step" data-x="3125" data-y="-35" data-z="-1200" data-rotate-x="-30"
+         data-rotate-y="135" data-rotate-z="0" data-scale="0.5">
+
+
+    </div>
+    <div class="backLeftFace step" data-x="2875" data-y="-35" data-z="-1200" data-rotate-x="-30" data-rotate-y="225"
+         data-rotate-z="0" data-scale="0.5">
+
+    </div>
+    <div class="bottomFace step" data-x="3000" data-y="180" data-z="-1180" data-rotate-x="60" data-rotate-y="180"
+         data-rotate-z="45" data-scale="0.5">
+
+    </div>
+</div>
 </div>
 
 <script src="js/impress.js"></script>
